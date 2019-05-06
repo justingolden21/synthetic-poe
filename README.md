@@ -20,7 +20,7 @@ To read the text outloud, you can use our text to speech website. Navigate to th
 
 ### How it Works
 
-Our synthesizer uses by using character-based Markov chains to generate semi-random text. 
+Our synthesizer uses by using character-based chains to generate semi-random text. 
 
 We first create a dictionary that tracks the number of times each character occurs after each set of characters of size SIZE that occurs in the original text.
 
@@ -34,7 +34,7 @@ Finally, we crop the beginning and end so that it starts after a terminating cha
 
 ### Similar Programs
 
-[Bloviate](https://successfulsoftware.net/2019/04/02/bloviate/) also uses character-based Markov chains to generate its output. Feel free to read more about how it works.
+[Bloviate](https://successfulsoftware.net/2019/04/02/bloviate/) also uses character-based chains to generate its output. Feel free to read more about how it works.
 
 ### Credit
 
