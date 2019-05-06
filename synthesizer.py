@@ -17,7 +17,7 @@ def synthesize(input_text, size, num_chars):
 	    char_dict[sub_str] = {}
 	  # if we havent seen this combo before, init to 1, else incremement 
 	  # number of times we've seen these size characters
-	  #correspond to the next character after them
+	  # correspond to the next character after them
 	  if not input_text[i+size] in char_dict[sub_str]:
 	    char_dict[sub_str][input_text[i+size]] = 1
 	  else:
@@ -26,7 +26,7 @@ def synthesize(input_text, size, num_chars):
 	# ----------------
 	# generate ouput
 
-	#our output str
+	# our output str
 	generated_sentence = ""
 
 	# star us off at a random point in the input, to (size) chars
@@ -40,7 +40,7 @@ def synthesize(input_text, size, num_chars):
 	  next_char = get_next_char(char_dict, generated_sentence[-size:])
 	  # if we have no data, pick random char
 	  if next_char == -1:
-	    next_char = random.choice(input_text) #change this?
+	    next_char = random.choice(input_text) # change this?
 	  generated_sentence += next_char
 
 	# ----------------
@@ -55,7 +55,7 @@ def synthesize(input_text, size, num_chars):
 
 	  generated_sentence += next_char
 
-	#delete chars from beginning until the first char is the char after an end of sentence char
+	# delete chars from beginning until the first char is the char after an end of sentence char
 	while not isSentenceEnd(generated_sentence[0]):
 	  generated_sentence = generated_sentence[1:]
 	generated_sentence = generated_sentence[1:]
@@ -71,7 +71,7 @@ def get_next_char(char_dict, input_str):
   if input_str not in char_dict:
     return -1 # if we don't have data for that char, handle in loop
 
-  rand_max = 0 #number of all total times that sequence occured
+  rand_max = 0 # number of all total times that sequence occured
   for key in char_dict[input_str]:
     rand_max += char_dict[input_str][key]
 
