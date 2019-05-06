@@ -1,0 +1,12 @@
+* {
+	text-align: center;
+}
+body {
+	margin: 40px;
+}
+#file {
+	display: none;
+}
+textarea {
+	height: 500px;
+}

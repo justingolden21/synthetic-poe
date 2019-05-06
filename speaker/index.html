@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Type to Speak</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="title=" content="Type to Speak">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Type words to hear them outloud">
+	<meta name="keywords" content="type to speak, text to speech, speak for me, accessibility">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Type to Speak</h1>
+		<textarea id="input" autofocus class="form-control"></textarea>
+		<br>
+		<button id="speak" class="btn btn-lg btn-dark">Speak</button>
+		<button id="stop" class="btn btn-lg btn-dark">Stop</button>
+		<button id="upload" class="btn btn-lg btn-dark">Upload Text</button>
+		<button id="clear" class="btn btn-lg btn-dark">Clear Text</button>
+		<input id="file" type="file">
+	</div>
+</body>
+</html>
