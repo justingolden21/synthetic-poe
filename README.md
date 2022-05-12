@@ -1,4 +1,4 @@
-# Synthetic Poe  &mdash; RGB Studios 
+# Synthetic Poe &mdash; RGB Studios
 
 ### About
 
@@ -20,7 +20,7 @@ To read the text outloud, you can use our text to speech website. Navigate to th
 
 ### How it Works
 
-Our synthesizer uses character-based chains to generate semi-random text. 
+Our synthesizer uses character-based chains to generate semi-random text.
 
 We first create a dictionary that tracks the number of times each character occurs after each set of characters of size SIZE that occurs in the original text.
 
@@ -35,6 +35,12 @@ Finally, we crop the beginning and end so that it starts after a terminating cha
 ### Similar Programs
 
 [Bloviate](https://successfulsoftware.net/2019/04/02/bloviate/) also uses character-based chains to generate its output. Feel free to read more about how it works.
+
+# TODO
+
+-   if the file isn't found, cut the program earlier and white loop to get a valid file
+-   remember most recent settings (in a text file that's gitignored) and default to those if enter with no setting (and show value in parentheses)
+-   future: connec tot song lyric api and make a gui
 
 ### Credit
 
